@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #e3f9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form input[type="button"] {
+  border: 0;
+  margin-left: 0;
+  width: 9rem;
+  height: 7rem;
+  background: transparent;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+
+  cursor: pointer;
+}
+
+.display {
+  background-color: white;
+  width: 36rem;
+  height: 20.3rem;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-flow: column;
+  margin: 0;
+  /* background-color: transparent; */
+}
+.center {
+  background: white;
+  justify-content: center;
+  display: flex;
+}
+
+.theme {
+  width: 8.7rem;
+  text-align: center;
+  height: 4.4rem;
+  border-radius: 6.2rem;
+  /* background-color: #e0e9fb; */
+  margin-top: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.theme-button {
+  width: 2.5rem;
+  height: 2.3rem;
+  border: 0;
+  background-color: transparent;
+}
+
+.mode-dark {
+  background-color: #212134;
+  & input[type="button"] {
+    color: #ffffff;
+  }
+}
+
+.mode {
+  background-color: #e0e9fb;
+  & input[type="button"] {
+    color: #565656;
+  }
+}
+
+.modey {
+  background-color: white;
+
+  & result {
+    color: #565656;
+  }
+  & calulation {
+    color: #565656;
+  }
+}
+
+.modey-dark {
+  background-color: #26263e;
+
+  & result {
+    color: #ffffff;
+  }
+  & calulation {
+    color: #ffffff;
+  }
+}
+
+.text-field input {
+  width: 6rem;
+  text-align: right;
+  height: 10rem;
+  box-shadow: none;
+  /* border: none;
+  outline: none; */
+}
+
+.calculator form input.operator {
+  color: #699bf7;
+}
+
+form input.equal[type="button"] {
+  width: 5.5rem;
+  height: 5.3rem;
+  flex-shrink: 0;
+  align-items: center;
+  border-radius: 6.2rem;
+  background: #ff855f;
+  margin-left: 1.6rem;
+}
+#clear {
+  color: #ff855f;
+}
+
+/* form input.button {
+  width: 87px;
+  height: 70px;
+} */
+form .icon-button {
+  border: 0;
+  width: 9rem;
+  height: 7rem;
+  background: transparent;
+
+  font-weight: 700;
+  line-height: 1.6rem;
+  margin-left: 0;
+}
+
+form .button-row {
+  display: flex;
+  align-items: stretch;
+}
+
+#calculation {
+  height: 3rem;
+  color: #d6d6d6;
+  font-style: normal;
+  font-size: 2.2rem;
+  text-align-last: right;
+  font-weight: 700;
+  border: 0;
+  line-height: normal;
+  width: 30rem;
+  /* margin-right: 2.2rem; */
+}
+#result {
+  height: 5rem;
+  font-size: 3.4rem;
+  border: 0;
+  color: #51555c;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 500;
+  text-align: right;
+  width: 30rem;
+  /* margin-right: 2.2rem; */
+}
+
+.history {
+  width: 30rem;
+  height: 58.7rem;
+  background-color: #26263e;
+}
+
+.divident {
+  width: 30rem;
+  height: 8rem;
+  background-color: #212134;
+}
+
+.space {
+  width: 10px;
+}

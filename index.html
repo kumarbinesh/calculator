@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700"
+      rel="stylesheet"
+    >
+
+    <title>Calculator</title>
+  </head>
+  <body onload="init()">
+  
+    <div class="container">
+      <div class="history">
+        <div class="divident">
+          
+        </div>
+
+      </div>
+      <div class="space"></div>
+      <div id="keypad" class="calculator mode">
+      
+        <div  id="top" class="center mode">
+          <div id="capsule" class="theme mode" >
+            <button onclick="dark()"   class="theme-button"   >
+              <img src="img/dark.png">
+             </button> 
+             <button onclick="light()"  class="theme-button"  >
+              <img src="img/light.png">
+             </button>
+          </div>
+          </div>
+        <form>
+          
+          <div id="screen"class="display modey" >
+          <input type="button"> 
+            <div  class="text-field modey">
+              <input type="text" value="0" autocomplete="off" name="displayCalc" id="calculation"/>
+            </div>
+            <div  class="text-field modey">
+              <input type="text"  autocomplete="off"  name="displayRes" id="result" />
+            </div>
+
+          </div>
+       
+          <div class="button-row">
+            <input
+              type="button"
+              value="C"
+              onclick="clearAll()"
+              class="operator"
+              id="clear"
+
+            />
+            <input
+              type="button"
+              value="%"
+              onclick="inputValue('%')" 
+              class="operator"
+            />
+            <input
+              type="button"
+              value="&#247"
+              onclick="inputValue('/') "
+              class="operator"
+              
+            />
+            <!-- "displayvalue()" -->
+            <button type="button" onclick="backspace()" class="icon-button">
+              <img src="img/bkspc.png">
+            </button>
+          
+              <!-- type="button"
+              value="%"
+              onclick="display.value += ''"
+              class="operator"
+            /> -->
+          </div>
+          <div class="button-row">
+            <input type="button" value="1" onclick="inputValue(1)" /> 
+            <input type="button" value="2" onclick="inputValue(2)"/>
+            <input type="button" value="3" onclick="inputValue(3)" />
+            <input
+              type="button"
+              value="+"
+              onclick="displayCalc.value += '+'"
+              class="operator"
+            />
+          </div>
+          <div class="button-row">
+            <input type="button" value="4" onclick="inputValue(4)"/>
+            <input type="button" value="5" onclick="inputValue(5)" />
+            <input type="button" value="6" onclick="inputValue(6)" />
+            <input
+              type="button"
+              value="-"
+              onclick="displayCalc.value += '-'"
+              class="operator"
+            />
+          </div>
+          <div class="button-row">
+            <input type="button" value="7" onclick="inputValue(7)"/>
+            <input type="button" value="8" onclick="inputValue(8)" />
+            <input type="button" value="9" onclick="inputValue(9)" />
+            <input
+              type="button"
+              value="&#215"
+              onclick="displayCalc.value += '*'"
+              class="operator"
+            />
+          </div>
+          <div class="button-row">
+            <button class="icon-button">
+              <img src="img/note_edit.png">
+            </button>
+            <!-- <input type="button" value="00" onclick="display.value += '00'" /> -->
+            <input type="button" value="0" onclick="inputValue(0)" />
+            <input type="button" value="."onclick="inputValue('.')" />
+            <!-- <div class="abcd"> -->
+            <input
+              type="button"
+              value="="
+              onclick="equals()"
+              class="equal"
+            />
+            <!-- </div> -->
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    
+  <script src="script.js">
+
+    </script>
+  </body>
+</html>
+
+<!-- // parameter of function -->
